@@ -30,7 +30,8 @@
     margin-top: 20px;
   }
   .form{
-    background: black;
+    background: url(https://rare-gallery.com/uploads/posts/300853-Black-Widow-2020-Movie-Poster-4K.jpg);
+    background-size: 1400px;
   }
   section span{
     margin-bottom: 300px;
@@ -75,28 +76,8 @@
     background: #fff;
     color: #d11807;
   }
-  .form  h1 {
-      text-align: center;
-      text-decoration: none;
-      color: white;
-      font-family: Arial, Helvetica, sans-serif;
-      font-weight: bold;
-      font-size: 45px;
-      margin-left: 550px;
-      margin-top: 40px;
-  }
-  .form  p {
-      text-align: center;
-      text-decoration: none;
-      color: white;
-      font-family: Arial, Helvetica, sans-serif;
-      font-weight: bold;
-      font-size: 20px;
-    margin-top: 20px;
-    margin-left: 20px;
-  }
   .form{
-    padding-bottom: 100px;
+    padding-bottom: 400px;
   }
   section{
     background: black;
@@ -164,3 +145,8 @@
       transform: translateY(0);
     }
   }
+  * {
+    box-sizing: border-box;
+  }
+  
+  

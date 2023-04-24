@@ -1,0 +1,25 @@
+*{
+    text-decoration: none;
+    list-style-type:none;
+    color: white;
+}
+
+.footer-avec-img {
+    background-image: url(https://wallpapers.com/images/featured/9pvmdtvz4cb0xl37.jpg);
+    background-size: cover;
+    background-position: center;
+    background
+    color: #fff;
+    padding: 50px 0;
+  }
+
+  .conteneur {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .conteneur ul {
+    display: inline-block;
+    text-align: center;
+
+  }
