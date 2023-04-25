@@ -5,12 +5,10 @@
 }
 
 .footer-avec-img {
-    background-image: url(https://wallpapers.com/images/featured/9pvmdtvz4cb0xl37.jpg);
+    background-image: url(https://t4.ftcdn.net/jpg/03/64/00/11/360_F_364001108_0hbE745nHjZb9ETgTXGqVHaGvlteAlg0.jpg);
     background-size: cover;
     background-position: center;
-    background
-    color: #fff;
-    padding: 50px 0;
+    height: 200px;
   }
 
   .conteneur {
@@ -21,5 +19,5 @@
   .conteneur ul {
     display: inline-block;
     text-align: center;
-
+    margin-top: 80px;
   }

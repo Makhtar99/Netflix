@@ -32,7 +32,6 @@
   }
   
   .movie-info h3 {
-    margin-top: 0;
     color: #fff;
   }
   
@@ -71,6 +70,20 @@
   
   .movie:hover .overview {
     transform: translateY(0);
+  }
+  .suggestions{
+    margin-left: 450px;
+    background: grey;
+    width: 600px;
+    border-radius: 10px;
+  }
+  .suggestions li {
+    padding: 5px;
+  }
+  .img{
+    background: url(https://wallpaper.dog/large/20494734.jpg);
+    height: 500px;
+    background-size: cover;
   }
 
   
