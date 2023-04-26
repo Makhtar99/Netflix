@@ -5,10 +5,11 @@ import './header.css';
 function Navbar () {
     return (
         <header>
-      <nav class="nav__container">
+      <nav className="nav__container">
+      <span class="logo"></span>
 
-        <ul class="ul__nav">
-          <li class="home"><a href="#">Films</a></li>
+        <ul className="ul__nav">
+          <li className="home"><a href="#">Films</a></li>
           <li><a href="#">Séries</a></li>
           <li><a href="#">Emissions</a></li>
           <li><a href="#">Login</a></li>

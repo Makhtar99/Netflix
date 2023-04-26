@@ -15,7 +15,7 @@ function App() {
   return (
     <Router>
       {loading ? (
-        <div class="loader"></div>
+        <div className="loader"></div>
       ) : (
         <>
           <Navbar />

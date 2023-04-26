@@ -3,8 +3,8 @@ import './footer.css';
 
 function Footer () {
     return (
-        <footer class="footer-avec-img">
-        <div class="conteneur">
+        <footer className="footer-avec-img">
+        <div className="conteneur">
           <ul>
             <li> <a href> Audiodescription</a> </li>
             <li> <a href> Relations Investisseur </a> </li>

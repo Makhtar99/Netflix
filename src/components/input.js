@@ -3,7 +3,7 @@ import MovieList from './firstrow.js'
 
 function Search () {
         return (
-          <section class="back">
+          <section className="back">
             <MovieList/>
             
             
