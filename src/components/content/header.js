@@ -9,6 +9,9 @@ function Navbar() {
     <header>
       <nav className="nav__container">
         <span className="logo"></span>
+        <div class="center">
+          <div></div>
+        </div>
 
         <nav className="ul__nav">
           <li className={location.pathname === '/' ? 'home' : ''}>

@@ -124,15 +124,65 @@ header{
     left: 50%;
     top: 50%;
     box-sizing: border-box;
-    border: 3px solid #FF3D00;
+    border: 3px solid #d11807;
     border-radius: 50%;
     animation: rotate_4191 0.5s linear infinite;
     margin-left: 50px;
     margin-top: 15px;
+  }
+  .center{
+    display: none;
   }
   
   @keyframes rotate_4191 {
     to {
       transform: translate(-50%, -55%) rotate(-45deg) rotateY(360deg)
     }
+  }
+  @media only screen and (max-width: 414px) {
+    .ul__nav {
+      display: none;
+    }
+
+    .logo::before{
+      border: 3px solid #fff;
+      height: 40px;
+    width: 40px;
+    border-right-color: transparent;
+    
+    }
+    .logo::after{
+      height: 30px;
+    width: 30px;
+    }
+    .center {
+      top: 35px;
+      left: 380px;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      width: 50px;
+      display: block;
+    }
+    
+    .center:before,
+    .center:after,
+    .center div {
+      background: #d11807;
+      content: "";
+      display: block;
+      height: 6px;
+      border-radius: 3px;
+      margin: 7px 0;
+      transition: 0.5s;
+    }
+    .center:hover:before {
+      transform: translateY(12px) rotate(135deg);
+    }
+    .center:hover:after {
+      transform: translateY(-12px) rotate(-135deg);
+    }
+    .center:hover div {
+      transform: scale(0);
+    }
+    
   }
