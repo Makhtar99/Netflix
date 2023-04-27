@@ -1,22 +1,40 @@
 import React from 'react';
+import { NavLink, useLocation } from 'react-router-dom';
 import '../Css/header.css';
 
+function Navbar() {
+  const location = useLocation();
 
-function Navbar () {
-    return (
-        <header>
+  return (
+    <header>
       <nav className="nav__container">
-      <span className="logo"></span>
+        <span className="logo"></span>
 
         <nav className="ul__nav">
-          <li className="home"><a href="#">Films</a></li>
-          <li><a href="#">Séries</a></li>
-          <li><a href="#">Emissions</a></li>
-          <li><a href="#">Login</a></li>
+          <li className={location.pathname === '/' ? 'home' : ''}>
+            <NavLink exact to="/" activeClassName="active">
+              Films
+            </NavLink>
+          </li>
+          <li className={location.pathname === '/series' ? 'home' : ''}>
+            <NavLink to="/series" activeClassName="active">
+              Séries
+            </NavLink>
+          </li>
+          <li className={location.pathname === '/emissions' ? 'home' : ''}>
+            <NavLink to="/emissions" activeClassName="active">
+              Emissions
+            </NavLink>
+          </li>
+          <li className={location.pathname === '/login' ? 'home' : ''}>
+            <NavLink to="/login" activeClassName="active">
+              Login
+            </NavLink>
+          </li>
         </nav>
       </nav>
-    </header>   
-    );
-  };
+    </header>
+  );
+};
 
-  export default Navbar ;
+export default Navbar;

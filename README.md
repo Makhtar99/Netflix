@@ -1,6 +1,8 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App].
+it's a website looking like the moviedatabase that gives informations on movies like the actors the release date the votes  on that movie and similar movies. If you wanna search about any movie that has been published you can have it on this site.
+for the differents fonctions of this website it will show you some movies on the homepage, you can also search for movies and it will give you some 10 propositions of movies in order to be fast. And then when you find your movie you can click on it to get informations about him and get some similar movies.
 
 ## Available Scripts
 
@@ -44,10 +46,6 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
 ### Analyzing the Bundle Size
 

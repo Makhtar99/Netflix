@@ -62,14 +62,21 @@
     bottom: 0;
     right: 0;
     max-height: 100%;
-    transform: translateY(101%);
+
     overflow-y: auto;
     transition: transform 0.3s ease-in;
     color: #fff;
+    height: 0%;
+    opacity: 0;
+    transition: all 0.4s;
+    transform: rotate(90deg) scale(-1);
+    
   }
   
   .movie:hover .overview {
-    transform: translateY(0);
+    opacity: 1;
+    height: 100%;
+    transform: rotate(0deg);
   }
   .suggestions{
     margin-left: 450px;
@@ -123,5 +130,7 @@
     color: black;
     margin-top: 100px;
   }
+  
+
 
   

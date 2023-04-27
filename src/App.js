@@ -5,6 +5,7 @@ import Navbar from './components/content/header.js';
 import Search from './components/content/input.js';
 import Footer from './components/content/footer.js';
 import MovieDetails from './components/content/moviedetail.js';
+import Login from './components/content/login.js'
 
 function App() {
   const [loading, setLoading] = useState('true');
@@ -22,6 +23,7 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" element={<Search />} />
+            <Route path="/login" element={<Login />} />
             <Route path="/movie/:id" element={<MovieDetails />} />
           </Routes>
           <Footer />
