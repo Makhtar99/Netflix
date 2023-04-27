@@ -1,14 +1,15 @@
 import './firstrow.css'
 import React, { useState, useEffect } from 'react';
+import {Link} from 'react-router-dom';
 
 const MovieList = () => {
   const [movies, setMovies] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [suggestions, setSuggestions] = useState([]);
 
-  const API_URL = 'https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=3fd2be6f0c70a2a598f084ddfb75487c&page=1';
+  const API_URL = 'https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=1a2efd512f17a07d970dd0a6d958f376&page=1';
   const IMG_PATH = 'https://image.tmdb.org/t/p/w1280';
-  const SEARCH_API = 'https://api.themoviedb.org/3/search/movie?api_key=3fd2be6f0c70a2a598f084ddfb75487c&query=';
+  const SEARCH_API = 'https://api.themoviedb.org/3/search/movie?api_key=1a2efd512f17a07d970dd0a6d958f376&query=';
 
   useEffect(() => {
     getMovies(API_URL);
@@ -88,9 +89,11 @@ const MovieList = () => {
       </form>
       </div>
       <div className="movie-container">
+              
         {movies.length > 0 &&
           movies.map((movie) => (
             <div className="movie" key={movie.id}>
+              <Link to={`/movie/${movie.id}`} key={movie.id}>
               <img
                 src={IMG_PATH + movie.poster_path}
                 alt={movie.title}
@@ -105,6 +108,7 @@ const MovieList = () => {
                 <h3>Overview</h3>
                 {movie.overview}
               </div>
+              </Link>
             </div>
           ))}
       </div>

@@ -1,0 +1,117 @@
+.movie-poster img{
+    width: 800px;
+    height: 1000px;
+}
+.movie-detail{
+    background: black;
+}
+.movie-poster{
+    display: flex;
+}
+.movie-rating .title {
+    font-size: 100px;
+    color: #d11807;
+    margin-left: 150px;
+}
+.movie-rating .votes {
+    margin-left: 600px;
+}
+.movie-rating .resume{
+    margin-top: 200px;
+    font-size: 20px;
+    line-height: 50px;
+    margin-left: 50px;
+}
+.movie-cast__actor img{
+    width: 288px;
+    height: 280px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.actors{
+    display: flex;
+    flex-direction: row;
+}
+.movie-info{
+    display: inline;
+}
+.similar-movies__movie img {
+    width: 280px;
+    height: 400px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.similar-movies__movie{
+    margin-bottom: 100px;
+}
+.similar-movies {
+    display: flex;
+    flex-direction: row;
+}
+.similar {
+    margin-top: 500px;
+    margin-bottom: 30px;
+}
+.act {
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+button {
+    position: relative;
+    height: 30px;
+    padding: 0 30px;
+    border: 2px solid #d11807;
+    background: black ;
+    user-select: none;
+    white-space: nowrap;
+    transition: all .05s linear;
+    font-family: inherit;
+    margin-left: 1300px;
+   }
+   
+   button:before, button:after {
+    content: "";
+    position: absolute;
+    background: black;
+    transition: all .2s linear;
+   }
+   
+   button:before {
+    width: calc(100% + 6px);
+    height: calc(100% - 16px);
+    top: 8px;
+    left: -3px;
+   }
+   
+   button:after {
+    width: calc(100% - 16px);
+    height: calc(100% + 6px);
+    top: -3px;
+    left: 8px;
+   }
+   
+   button:hover {
+    cursor: crosshair;
+   }
+   
+   button:active {
+    transform: scale(0.95);
+   }
+   
+   button:hover:before {
+    height: calc(100% - 32px);
+    top: 16px;
+   }
+   
+   button:hover:after {
+    width: calc(100% - 32px);
+    left: 16px;
+   }
+   
+   button span {
+    font-size: 15px;
+    z-index: 3;
+    position: relative;
+    font-weight: 600;
+   }
+   

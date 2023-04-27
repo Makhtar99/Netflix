@@ -6,7 +6,7 @@ function Navbar () {
     return (
         <header>
       <nav className="nav__container">
-      <span class="logo"></span>
+      <span className="logo"></span>
 
         <ul className="ul__nav">
           <li className="home"><a href="#">Films</a></li>

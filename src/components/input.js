@@ -5,8 +5,7 @@ function Search () {
         return (
           <section className="back">
             <MovieList/>
-            
-            
+                       
           </section>
         );
 }

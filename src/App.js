@@ -4,9 +4,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/header.js';
 import Search from './components/input.js';
 import Footer from './components/footer';
+import MovieDetails from './components/moviedetail';
 
 function App() {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState('true');
 
   useEffect(() => {
     setTimeout(() => setLoading(false), 3000);
@@ -21,6 +22,7 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" element={<Search />} />
+            <Route path="/movie/:id" element={<MovieDetails />} />
           </Routes>
           <Footer />
         </>
