@@ -83,6 +83,7 @@
     background: grey;
     width: 600px;
     border-radius: 10px;
+    height: fit-content;
   }
   .suggestions li {
     padding: 5px;
@@ -138,6 +139,16 @@
     .img{
       background: url(https://wallpaper.dog/large/20494734.jpg);
       background-size: cover;
+    }
+    .suggestions{
+      margin-left: 100px;
+      background: grey;
+      width: 200px;
+      border-radius: 10px;
+      height: fit-content;
+    }
+    .suggestions li {
+      padding: 3px;
     }
   }
   
