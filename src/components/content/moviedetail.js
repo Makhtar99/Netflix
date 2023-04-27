@@ -1,4 +1,4 @@
-import './movie.css';
+import '../Css/moviedetail.css';
 import React, { useState, useEffect } from 'react';
 import { useParams,Link } from 'react-router-dom';
 

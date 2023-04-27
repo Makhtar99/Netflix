@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import MovieList from './firstrow;js';
-import './index.css';
+import MovieList from 'src/components/content/firstrow.js';
 
 ReactDOM.render(
   <React.StrictMode>

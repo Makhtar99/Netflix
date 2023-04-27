@@ -1,4 +1,3 @@
-import './input.css'
 import MovieList from './firstrow.js'
 
 function Search () {

@@ -1,4 +1,4 @@
-import './firstrow.css'
+import '../Css/firstrow.css'
 import React, { useState, useEffect } from 'react';
 import {Link} from 'react-router-dom';
 

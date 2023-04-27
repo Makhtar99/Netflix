@@ -1,5 +1,5 @@
 import React from 'react';
-import './header.css';
+import '../Css/header.css';
 
 
 function Navbar () {
@@ -8,12 +8,12 @@ function Navbar () {
       <nav className="nav__container">
       <span className="logo"></span>
 
-        <ul className="ul__nav">
+        <nav className="ul__nav">
           <li className="home"><a href="#">Films</a></li>
           <li><a href="#">Séries</a></li>
           <li><a href="#">Emissions</a></li>
           <li><a href="#">Login</a></li>
-        </ul>
+        </nav>
       </nav>
     </header>   
     );
